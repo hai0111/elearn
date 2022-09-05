@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: var(--font-main);
+	font-size: 62.5%;
+}
+
+body,
+a,
+button,
+input,
+textarea {
+	font-size: 1.6rem;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+input,
+button,
+textarea {
+	outline: none;
+	border: none;
+}
+
+img {
+	display: block;
+}
+
+// Custom
+.container {
+	max-width: 1200px;
+}
+
+.opacityOverlayShow {
+	opacity: 0;
+	animation: var(--opacityOverlayShow);
+}
+.overlayOpacity {
+	left: 0%;
+	right: 100%;
+	animation: var(--overlayOpacity);
+}
+.slideToTop {
+	opacity: 0;
+	transform: translateY(100%);
+	animation: var(--slideToTop);
+}

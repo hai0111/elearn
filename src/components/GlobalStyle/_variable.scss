@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+	--font-main: 'Montserrat', sans-serif;
+	--color-hero: #75b7ff;
+	--color-top: #2c75e4;
+	--color-footer: #273044;
+	--color-yellow: #eab830;
+	--opacityOverlayShow: opacityOverlayShow 2s ease forwards;
+	--overlayOpacity: overlayOpacity 2s ease forwards;
+	--slideToTop: slideToTop 1s ease forwards;
+}
+
+@keyframes opacityOverlayShow {
+	50% {
+		opacity: 0;
+	}
+	51% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes overlayOpacity {
+	50% {
+		right: 0%;
+		left: 0%;
+	}
+
+	100% {
+		left: 100%;
+		right: 0%;
+	}
+}
+
+@keyframes slideToTop {
+	100% {
+		transform: translateY(0%);
+		opacity: 1;
+	}
+}
